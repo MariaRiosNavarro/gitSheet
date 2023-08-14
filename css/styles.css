@@ -5,3 +5,39 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(/assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+.html {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: rgb(192, 190, 205);
+  background-color: rgb(94, 87, 87);
+}
