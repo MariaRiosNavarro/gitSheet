@@ -25,10 +25,26 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(224, 221, 221);
+  box-shadow: -1px 1px 10px gray;
+}
+
 .nav-list {
   display: flex;
+  justify-content: center;
   list-style: none;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -40,4 +56,30 @@
 .nav-link:hover {
   color: rgb(192, 190, 205);
   background-color: rgb(94, 87, 87);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Sections */
+
+main {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+section {
+  width: 30%;
+  min-height: 9rem;
+  box-shadow: -1px 1px 10px gray;
+  border-radius: 8px;
+}
+
+.heading-section {
+  font-size: 14px;
+  text-align: center;
 }
