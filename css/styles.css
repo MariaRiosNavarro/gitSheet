@@ -21,12 +21,33 @@
   src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
 }
 
-.html {
+html {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(141, 68, 68);
+  font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  background-color: rgb(141, 68, 68);
+  color: whitesmoke;
+  font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+}
+
+code {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: rgb(171, 72, 72);
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
 }
 
 /* Header */
@@ -44,7 +65,7 @@ header {
   justify-content: center;
   list-style: none;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  font-size: 12px;
 }
 
 .nav-link {
@@ -54,7 +75,7 @@ header {
 }
 
 .nav-link:hover {
-  color: rgb(192, 190, 205);
+  color: rgb(221, 219, 232);
   background-color: rgb(94, 87, 87);
 }
 
@@ -77,9 +98,17 @@ section {
   min-height: 9rem;
   box-shadow: -1px 1px 10px gray;
   border-radius: 8px;
+  font-size: 12px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .heading-section {
   font-size: 14px;
   text-align: center;
+  padding: 0.1rem 0.3rem;
+  background-color: rgb(237, 229, 229);
+}
+
+article {
+  padding-top: 0.5rem;
 }
