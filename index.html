@@ -12,13 +12,10 @@
       <nav>
         <ul class="nav-list">
           <li c class="nav-list-item">
-            <a class="nav-link" href="#setup">Setup</a>
+            <a class="nav-link" href="#setup">Setup & Start</a>
           </li>
           <li class="nav-list-item">
-            <a class="nav-link" href="#start-project">Start a Project</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link" href="#make-change">Make a Change</a>
+            <a class="nav-link" href="#make-change">Change & Commit</a>
           </li>
           <li class="nav-list-item">
             <a class="nav-link" href="#branches">Branches</a>
@@ -47,68 +44,106 @@
     <main>
       <!-- !SETUP -->
       <section id="setup" class="setup-section">
-        <h2 class="heading-section">Setup</h2>
+        <h2 class="heading-section">Setup & Start</h2>
         <article>
           <ul>
             <li class="setup-section-list-item">
-              <code>git --version</code> -> First , test in the Shell with , if
-              <span class="git">Git</span>
-              are installed.
+              <article class="subarticle">
+                <h4>Setup</h4>
+                <ul>
+                  <li>
+                    <code>git --version</code> -> First , test in the Shell with , if
+                    <span class="git">Git</span>
+                    are installed.
+                  </li>
+
+                  <li>
+                    <a href="https://git-scm.com/downloads" target="_blank">
+                      git-scm.com/downloads</a
+                    > -> Git Download
+                  </li>
+
+                  <li>
+                    <code>git config --global user.name "your_username"</code>
+                  </li>
+                  <li>
+                    <code>git config --global user.email "your@email.com"</code> 
+                  </li>
+                  <li>
+                    <code>git config --global --list</code> ->Check the Settings 
+                  </li>
+                </ul>
+              </article>
+
             </li>
             <li class="setup-section-list-item">
-              <a href="https://git-scm.com/downloads" target="_blank">
-                git-scm.com/downloads</a
-              > -> Git Download
+              <article class="subarticle">
+                <h4>CREATE a Repository</h4>
+                <ul>
+                  <li>
+                    Create a Repository in
+                    <a href="https://github.com/" target="_blank">GitHub</a>, you can
+                    choose Privat/Public and first <strong>NO</strong> Readme. Copy
+                    the <strong>HTTPS Adress</strong>
+                  </li>
+                  <li>
+                    <code>git init </code>
+                  </li>
+                  <li>
+                    <code>git add README.md</code>
+                  </li>
+                  <li>
+                    <code>git commit -m "first commit"</code>
+                  </li>
+                  <li>
+                    <code>git branch -M main</code>
+                  </li>
+                  <li>
+                    <code>git remote add origin 'COPIED_HTTPS_ADRESS_HERE' </code>
+                  </li>
+                  <li>
+                    <code>git push -u origin main</code>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <article class="subarticle">
+                <h4>CLONE an existing Repository</h4>
+                <ul>
+                  <li>
+                    Create a local folder
+                  </li>
+                  <li>
+                    GitHub -> Repository -> copy the <strong>HTTPS Adress</strong>
+                  </li>
+                  <li>
+                    <code>git glone 'COPIED_HTTPS_ADRESS_HERE'</code>
+                  </li>
+                  <li>
+                    <code>ls</code>-> to see the content
+                  </li>
+		              <li><code>cd 'foldername'</code> -> to navigate into it
+		              </li>
+                </ul>
+              </article>
             </li>
             <li class="setup-section-list-item">
-              <code>git config --global user.name "your_username"</code>
-            </li>
-            <li class="setup-section-list-item">
-              <code>git config --global user.email "your@email.com"</code>
-            </li>
-            <li class="setup-section-list-item">
-              <code>git config --global --list</code> ->Check the Settings
-            </li>
-          </ul>
-          <br>
-          <hr>
-          <br>
-          <p> <code>comand + shif + .</code> <strong>DELETE A REPOSITORY</strong></p>
-        </article>
-      </section>
-      <!-- !STARTPROJECT -->
-      <section id="start-project" class="start-project">
-        <h2 class="heading-section">Start Project</h2>
-        <article>
-          <ul>
-            <li class="start-project-list-item">
-              Create a Repository in
-              <a href="https://github.com/" target="_blank">GitHub</a>, you can
-              choose Privat/Public and first <strong>NO</strong> Readme. Copy
-              the <strong>HTTPS Adress</strong>
-            </li>
-            <li class="start-project-list-item"><code>git init </code></li>
-            <li class="start-project-list-item">
-              <code>git add README.md</code>
-            </li>
-            <li class="start-project-list-item">
-              <code>git commit -m "first commit"</code>
-            </li>
-            <li class="start-project-list-item">
-              <code>git branch -M main</code>
-            </li>
-            <li class="start-project-list-item">
-              <code>git remote add origin 'COPIED_HTTPS_ADRESS_HERE' </code>
-            </li>
-            <li class="start-project-list-item">
-              <code>git push -u origin main</code>
+              <article class="subarticle">
+                <h4>Delete Repository</h4>
+                <ul>
+                  <li>
+                    <code>comand + shif + .</code> <strong>DELETE A REPOSITORY</strong>
+                  </li>
+                </ul>
+              </article>
             </li>
           </ul>
         </article>
       </section>
       <!-- !MAKE A CHANGE -->
       <section id="make-change" class="make-change-section">
-        <h2 class="heading-section">Make a change & Commit</h2>
+        <h2 class="heading-section">Change & Commit</h2>
         <article>
           <ul>
             <li class="make-change-list-item">
@@ -135,38 +170,47 @@
             </li>
             <li class="make-change-list-item">
               <article class="subarticle">
-                <h4></h4>
+                <h4>Commits</h4>
                 <ul>
                   <li>
-                    <code></code> ->
+                    <code>git log --all</code> -> shows you all commits
                   </li>
 
                   <li>
-                    <code></code> ->
+                    <code>git log --oneline</code> -> all commits in one line
                   </li>
 
                   <li>
-                    <code></code> ->
+                    <code>git log --graph</code> -> shows you all commits graphically
+                  </li>
+                  <li>
+                    <code>q</code> -> you can get out of the view again.
                   </li>
                 </ul>
               </article>
             </li>
-          </ul>
-        </article>
-      </section>
-      <!-- !Clone -->
-      <section id="clone" class="clone-section">
-        <h2 class="heading-section">Clone</h2>
-        <article>
-          <ul>
-            <li class="clone-section-list-item">Create local folder</li>
-            <li class="clone-section-list-item">GitHub -> Repository -> copy
-              the <strong>HTTPS Adress</strong></li>
-            <li class="clone-section-list-item"><code>git glone 'COPIED_HTTPS_ADRESS_HERE'</code></li>
-            <li class="clone-section-list-item"><code>ls</code> to see the content</li>
-            <li class="clone-section-list-item"><code>cd 'foldername'</code> to navigate into it</li>
+            <li class="make-change-list-item">
+              <article class="subarticle">
+                <h4>Commit back and apply changes</h4>
+                <ul>
+                  <li>
+                    <code>git log --oneline</code> -> to display the list of commit IDs
+                    and select and copy the id
+                  </li>
+
+                  <li>
+                    <code>git checkout -b "new-branch-name" "copied-commit-id"</code> -> to create a new branch from a specific commit and switch to this branch.
+                  </li>
+                  <li>
+                    <code>git add .</code>
+                  </li>
+                  <li>
+                    <code>git commit -m "commit back"</code>
+                  </li>
+                  <li> <code>git push origin "new-branch-name"</code> </li>
+                </ul>
+              </article>
             </li>
-          </ol>
           </ul>
         </article>
       </section>
