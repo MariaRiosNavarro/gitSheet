@@ -26,21 +26,21 @@
           <li class="nav-list-item">
             <a class="nav-link" href="#mergin">Mergin</a>
           </li>
-          <li class="nav-list-item">
+          <!-- <li class="nav-list-item">
             <a class="nav-link" href="#rebasing">Rebasing</a>
-          </li>
+          </li> -->
           <li class="nav-list-item">
             <a class="nav-link" href="#undoing">Undoing</a>
           </li>
           <li class="nav-list-item">
             <a class="nav-link" href="#review">Review</a>
           </li>
-          <li class="nav-list-item">
+          <!-- <li class="nav-list-item">
             <a class="nav-link" href="#stashing">Stashing</a>
-          </li>
-          <li class="nav-list-item">
+          </li> -->
+          <!-- <li class="nav-list-item">
             <a class="nav-link" href="#synchronizing">Synchronizing</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -69,7 +69,7 @@
             </li>
             <li class="setup-section-list-item">
               Check the Settings
-              <code>git config --global --list"</code>
+              <code>git config --global --list</code>
             </li>
           </ul>
         </article>
@@ -110,14 +110,33 @@
         <article>
           <ul>
             <li class="make-change-list-item">
-              <code>git add .</code>
+              <p><code>git add 'filename'</code> -> add one file</p>
             </li>
             <li class="make-change-list-item">
-              <code>git commit -m 'commit'</code>
+              <p><code>git add . </code> -> add all files</p>
             </li>
             <li class="make-change-list-item">
-              <code>git push</code>
+              <p>
+                <code>git commit -m 'commit'</code> ->marks the change with a
+                meaningfull small message
+              </p>
             </li>
+            <li class="make-change-list-item">
+              <p>
+                <code>git push</code> -> the changes are uploaded to the branch
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- !Clone -->
+      <section id="clone" class="clone-section">
+        <h2 class="heading-section">Clone</h2>
+        <article>
+          <ul>
+            <li class="clone-section-list-item"></li>
+            <li class="clone-section-list-item"></li>
+            <li class="clone-section-list-item"></li>
           </ul>
         </article>
       </section>
@@ -126,9 +145,64 @@
         <h2 class="heading-section">Branches</h2>
         <article>
           <ul>
-            <li class="branches-section-list-item"></li>
-            <li class="branches-section-list-item"></li>
-            <li class="branches-section-list-item"></li>
+            <li class="branches-section-list-item">
+              <code> git branch </code> -> shows all existing branches. (\* ->
+              shows where you are at the moment)
+            </li>
+            <li class="branches-section-list-item">
+              <article class="subarticle">
+                <h4>CREATE Branch</h4>
+                <ul>
+                  <li>
+                    <code>git branch 'featurename'</code> ->creates a new branch
+                    branch.
+                  </li>
+
+                  <li>
+                    <code>git switch -c 'featurename'</code> ->creates a new
+                    branch branch and switch to the branch
+                  </li>
+
+                  <li>
+                    <code>git checkout -b 'featurename'</code> ->creates a new
+                    branch branch and switch to the branch
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="branches-section-list-item">
+              <article class="subarticle">
+                <h4>CHANGE Branch</h4>
+                <ul>
+                  <li>
+                    <code>git checkout 'featurename'</code> -> switch to this
+                    branch
+                  </li>
+
+                  <li>
+                    <code>git switch 'featurename'</code> ->switch to this
+                    branch
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="branches-section-list-item">
+              <article class="subarticle">
+                <h4>DELETE Branch</h4>
+                <ul>
+                  <li>
+                    <code>git branch -d 'featurename'</code> ->Deletes the
+                    branch 'featurename'
+                  </li>
+
+                  <li>
+                    <code>git branch -D 'featurename''</code> ->
+                    <strong>WITHOUT WARNING</strong>, the branch is deleted
+                    regardless of its status
+                  </li>
+                </ul>
+              </article>
+            </li>
           </ul>
         </article>
       </section>
@@ -144,7 +218,7 @@
         </article>
       </section>
       <!-- !REBASING -->
-      <section id="rebasing" class="rebasing-section">
+      <!-- <section id="rebasing" class="rebasing-section">
         <h2 class="heading-section">Rebasing</h2>
         <article>
           <ul>
@@ -153,7 +227,7 @@
             <li class="rebasing-section-list-item"></li>
           </ul>
         </article>
-      </section>
+      </section> -->
       <!-- !UNDOING -->
       <section id="undoing" class="undoing-section">
         <h2 class="heading-section">Undoing</h2>
@@ -177,7 +251,7 @@
         </article>
       </section>
       <!-- !STASHING -->
-      <section id="stashing" class="stashing-section">
+      <!-- <section id="stashing" class="stashing-section">
         <h2 class="heading-section">Stashing</h2>
         <article>
           <ul>
@@ -186,7 +260,7 @@
             <li class="stashing-section-list-item"></li>
           </ul>
         </article>
-      </section>
+      </section> -->
       <!-- !Synchronizing -->
       <section id="synchronizing" class="synchronizing-section">
         <h2 class="heading-section">Synchronizing</h2>
