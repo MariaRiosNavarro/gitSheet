@@ -145,6 +145,8 @@ h4 {
   padding-bottom: 1rem;
 }
 
+/* mobile */
+
 @media screen and (max-width: 767px) {
   main {
     width: 100vw;
@@ -157,5 +159,29 @@ h4 {
 
   nav {
     display: none;
+  }
+}
+
+/* tablets */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  main {
+    width: 100vw;
+    margin: 0;
+  }
+  section {
+    width: 100vw;
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
+  main {
+    width: 1199px;
+    margin: 0;
+  }
+
+  section {
+    width: 30%;
   }
 }
