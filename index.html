@@ -26,9 +26,9 @@
           <!-- <li class="nav-list-item">
             <a class="nav-link" href="#rebasing">Rebasing</a>
           </li> -->
-          <li class="nav-list-item">
+          <!-- <li class="nav-list-item">
             <a class="nav-link" href="#undoing">Undoing</a>
-          </li>
+          </li> -->
           <li class="nav-list-item">
             <a class="nav-link" href="#review">Review</a>
           </li>
@@ -115,16 +115,19 @@
                     Create a local folder
                   </li>
                   <li>
-                    GitHub -> Repository -> copy the <strong>HTTPS Adress</strong>
+                    GitHub -> Repository -> copy the <strong>HTTPS/SSH Adress</strong>
                   </li>
                   <li>
-                    <code>git glone 'COPIED_HTTPS_ADRESS_HERE'</code>
+                    <code>git glone 'COPIED_HTTPS/SSH_ADRESS_HERE'</code>
                   </li>
                   <li>
                     <code>ls</code>-> to see the content
                   </li>
 		              <li><code>cd 'foldername'</code> -> to navigate into it
 		              </li>
+                  </li>
+                   <li><code>git pull</code> -> to update the newest remote (GitHub) version of main.
+                  </li>
                 </ul>
               </article>
             </li>
@@ -220,8 +223,19 @@
         <article>
           <ul>
             <li class="branches-section-list-item">
-              <code> git branch </code> -> shows all existing branches. (\* ->
-              shows where you are at the moment)
+              <article class="subarticle">
+                <h4>SHOW Branches</h4>
+                <ul>
+                  <li>
+                    <code> git branch </code> -> shows all existing branches. (\* ->
+              shows where you are at the moment) 
+                  </li>
+	                <li>
+			              <code>git branch --all</code> -> all existing branches.
+		              </li>
+                </ul>
+              </article>
+              
             </li>
             <li class="branches-section-list-item">
               <article class="subarticle">
@@ -289,16 +303,22 @@
               When all renewals (branch merged) have been updated in main, they can be brought into our local BRANCH and updated as well.
             </li>
             <li class="mergin-section-list-item">
-              <code>git checkout
-              'yourlocalbranchname'</code> ->If you are not in your branch 
+              <code>git checkout 'yourlocalbranchname'</code> ->If you are not in your branch 
             </li>
             <li class="mergin-section-list-item"> 
-              <code>git merge main</code> -> main wird mit der branch gemerged
+              <code>git merge main</code> -> main is merged with the branch. IMPORTANT: after that allways 
             </li>
-            <li>
+            <li class="mergin-section-list-item">
+              <code>git push</code>
+            </li>
+            <li class="mergin-section-list-item"> 
+              <code>git pull origin main</code>->main is merged with the branch, you don´t need a 'git push' after that.
+            </li>
+            <li class="mergin-section-list-item">
               <code>git checkout main</code> ->come back to main
             </li>
-            <li> <code>git pull</code>->changes made to main (in Github/Remote) are installed in your local main.
+            <li class="mergin-section-list-item"> 
+              <code>git pull</code>->to update the newest remote (GitHub) version of main.
             </li>
             </ul>
         </article>

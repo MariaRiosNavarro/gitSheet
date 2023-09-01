@@ -49,6 +49,8 @@ code {
   color: white;
   padding: 0.1rem 0.3rem;
   border-radius: 5px;
+  margin-bottom: 0.2rem;
+  display: inline-block;
 }
 
 strong {
