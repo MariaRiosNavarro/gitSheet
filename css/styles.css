@@ -88,6 +88,8 @@ header {
 
 h1 {
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Sections */
